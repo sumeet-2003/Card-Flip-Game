@@ -1,0 +1,83 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(black,rgb(0, 163, 11),black);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border: 2px solid #00ff11;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: #00ff11;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff11;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card.flipped {
+    background-color: #000000;
+    transform: rotateY(180deg);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #00ff11;
+    border: none;
+    color: black;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(24, 146, 0);
+    color: white;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#leaderboard h2 {
+    color: #00ff11;
+}
+
+#leaderboard p {
+    color: #00ff11;
+}
